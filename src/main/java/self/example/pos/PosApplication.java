@@ -11,7 +11,7 @@ public class PosApplication {
 		SpringApplication.run(PosApplication.class, args);
 		System.out.println("Welcome to Pos!");
 
-		Item item = new Item(1, "Egg", "Dairy", 0.50);
+		Item item = Item.builder().itemId(1).name("egg").category("Dairy").price(0.50).build();
 		System.out.println(item);
 	}
 
